@@ -1,0 +1,62 @@
+.weakly-div {
+  padding: 10px 5px 0px 5px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: rgba(238, 237, 237, 0.22);
+  border:1px solid #0000002d;
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  height: fit-content;
+  position: relative;
+}
+.weakly-div::before{
+  content: '';
+  position: absolute;
+  background-color: #e9ecef44;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 10px;
+  height: 10px;
+  transition: .1s linear;
+  z-index: -1;
+}
+.weakly-div:hover::before{
+width: 100%;
+height: 100%;
+}
+.weakly-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 20px;
+  padding-bottom: 12px;
+}
+.weakly-div .box {
+  width: 130px;
+  cursor: pointer;
+}
+.icon {
+  max-width: 100px;
+  margin: auto;
+}
+.icon img {
+  max-width: 100%;
+  margin-bottom: 6px;
+}
+.temps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.temps p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.temps div span{
+    position: relative;
+    bottom: 5px;
+}

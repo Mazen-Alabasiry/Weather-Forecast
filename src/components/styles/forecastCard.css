@@ -1,0 +1,94 @@
+.card-forecast .box{
+    text-align: center;
+}
+@media (min-width: 576px) {
+    .card-forecast  .box .widget{
+        width: 100px !important; 
+    }
+
+ }
+ .card-forecast .box .row{
+    align-items: baseline;
+}
+@media (max-width: 992px) {
+    .card-forecast{
+        width: fit-content;
+    }
+ }
+
+ .card-forecast .normals{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+}
+.card-forecast{
+    position: relative;
+    border-radius:5px;
+    width: 400px;
+    cursor: pointer;
+    background-color: rgba(238, 237, 237, 0.22);
+    border:1px solid #0000002d;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+}
+.card-forecast::before{
+    content: '';
+    position: absolute;
+    background-color: #e9ecef44;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 10px;
+    height: 10px;
+    transition: .1s linear;
+    z-index: -1;
+}
+.card-forecast:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 576px) {
+    .card-forecast    .box .widget{
+        margin: auto;
+    }
+ }
+ .card-forecast .period{
+    font-size: 20px;
+    border-bottom: 1px solid #6364644f;
+    padding: 3px;
+    text-align: center;
+}
+.card-forecast .description{
+    font-size: 20px;
+    border-top: 1px solid #6364644f;
+    padding: 3px;
+    text-align: center;
+}
+
+.normals .stats p:last-child{
+    position: relative;
+    top: -20px;
+    font-size: 10px;
+    color:gray;
+}
+.forecast-row{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+row-gap: 20px;
+}
+@media (min-width: 768px) {
+    .card-forecast .data{
+    
+        margin: 0px auto;
+    }
+
+}
+@media (max-width: 768px) {
+    .card-forecast .data{
+        margin:auto 0px !important;
+        padding-left:0px !important;
+    }
+
+}
+

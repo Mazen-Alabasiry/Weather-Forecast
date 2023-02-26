@@ -1,0 +1,84 @@
+.modal-body{
+    padding: 20px 10px 0px 10px !important;
+}
+.current-weather-card .card-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #dee2e6 !important;
+    position: relative;
+}
+.card-header .sub{
+    font-size: 20px;
+}
+.card-header .close-span{
+    color: gray;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+}
+.current-weather img{
+    width: 100px;
+}
+.content-module .card-content {
+    display: flex;
+    justify-content: space-around;
+}
+.card-body-content .description{
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #6364644f;
+}
+.card-body-content .panels{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.card-body-content .panels div{
+    flex: 1;
+}
+.card-body-content .panels div[class='left']{
+    position: relative;
+}
+.card-body-content .panels div[class='left']::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 2px;
+    height: 85%;
+    background-color: #6364644f;
+    transform: translateY(-50%);
+}
+.card-body-content .panels .panel-item span{
+font-size: 20px;
+font-weight: 600;
+
+}
+.card-body-content .panels .panel-item p{
+    font-size: 18px; 
+}
+.display-temp{
+    font-size: 40px;
+    font-weight: 600;
+}
+.max-temp .label,.min-temp .label{
+    position: relative;
+    top: -10px;
+    color: gray;
+}
+.max-temp p,.min-temp p{
+    display: inline-block;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+}

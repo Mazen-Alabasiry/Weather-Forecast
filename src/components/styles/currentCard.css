@@ -1,0 +1,77 @@
+.weather{
+    width: 100%;
+}
+@media(max-width:767px)
+{
+    
+.weather{
+    width: 90%;
+    margin: 0px auto;
+}
+
+}
+@media (max-width:992px) {
+    .card{
+        margin-top: 10px !important;
+        width: 100% !important;
+    }
+}
+
+@media (min-width:992px) {
+    .card{
+        width: 80% !important;
+    }
+}
+
+.card{
+    padding: 1rem;
+    margin: 5px auto !important;
+    border-radius: 1rem;
+    background-color: rgba(238, 237, 237, 0.22);
+    border-color: rgba(238, 237, 237, 0.22);
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    text-align: center;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.title p{
+    margin-bottom: 0.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.data{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.data .time{
+color: gray;
+position: relative;
+top: -5px;
+}
+.temp{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+.temp span{
+    font-size: 50px;
+    font-weight: 600;
+    font-style: italic;
+    margin-right: 5px;
+}
+.header{
+    color: gray;
+}
+.condition{
+    font-weight: 500;
+}
+.value{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 500;
+}
+.col-4{
+    padding: 0 0.2rem;
+}
