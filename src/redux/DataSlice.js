@@ -44,7 +44,6 @@ export const DataSlice=createSlice({
           state.latitude=action.payload.latitude
           state.longitude=action.payload.longitude
         },
-
     },
 
 
